@@ -1,20 +1,62 @@
-# Tareas Iniciales
+#Despliegues en IAAS y Heroku
 
-1. Aprenda a utilizar GitBook escribiendo la documentación en formato MarkDown de como ha realizado esta primera práctica, incluyendo secciones:
-2. Describiendo que es GitBook y como se utiliza
-3. Que son las gh-pages y como se utilizan
-4. Como se usa el módulo gh-pages para automatizar el despliegue en gh-pages
-5. Como se despliega un libro en www.gitbook.com
-6. Que es nodeJS, npm, package.json
-7. Como funciona Gulpfile
+##Descripción
 
-## Versión en GH-Pages
+El objetivo de esta práctica es proporcionar un mecanismo de despliegue de un libro gitbook de manera que un ```deploy``` a github produzca la actualización automática de los otros sites de despliegue:
 
-[Link a gh-pages](https://losnen.github.io/tareas-iniciales-aitor-joshua-samuel/)
+* gitboook.com
 
-## Versión de Gitbook
+* Heroku
 
-[Link a Gitbook](https://www.gitbook.com/book/losnen/tareas-iniciales/)
+* Para lograr este objetivo usaremos la técnica descrita en el artículo Colaboración: [The Perfect Work-flow with Git, GitHub, and SSH.](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/colaboracion/)
+
+* En el tutorial Colaboración: The Perfect Work-flow with Git, GitHub, and SSH se usa PHP para el código del servidor (que en nuestro caso vamos a hacer que se ejecute en Heroku e iaas). Utilice NodeJS y Express para escribir el servidor.
+
+* En iaas.ull.es, debido a que la IP de la máquina virtual es privada a la red de la ULL, la estrategia explicada en [The Perfect Work-flow with Git, GitHub, and SSH](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/colaboracion/)
+ no funciona.
+Para sincronizar con iaas.ull.es disponga un script que utilice ssh y/o scp para actualizar los ficheros necesarios al repositorio del libro en la máquina virtual.
+
+* Este ejemplo usando el comando ssh sugiere una forma de hacerlo:
+
+```shell
+[~/apuntesgitbook(master)]$ ssh sytw 'cd src/express-start; git ls-files'
+.gitignore
+README.md
+hello/hello.js
+hello/package.json
+hello/views/index.ejs
+routes/Rakefile
+routes/app.js
+routes/birds.js
+routes/gulpfile.js
+routes/package.json
+routes/public/images/kitten.jpg
+```
+
+usando este comando nos conectamos a la máquina virtual iaas ```sytw``` (previamente hemos hecho un alias ide la IP a ```sytw``` configurado en ```~/.ssh/config``` y ejecutamos en la misma un comando que nos posiciona en el directorio adecuado y llama al comando ```git```
+
+* Si se tiene establecida una pareja de claves SSH privada-pública entre la máquina de desarrollo (que se supone en la red de la ULL) y la máquina virtual, es posible usar ```ssh``` para conectarse a la máquina virtual y hacer ```un git pull``` en el directorio adecuado.
+
+* Esta solución tampoco trabaja si se está desarrollando en c9, ya que las máquinas de c9 no están en la red de la ULL.
+
+* Parta de los códigos escritos en las prácticas anteriores.
+
+##Referencias
+
+Colaboración: The Perfect Work-flow with Git, GitHub, and SSH
+The Perfect Workflow, with Git, GitHub, and SSH
+Express
+Procesos: Ejecutando comandos Unix
+Heroku
+iaas
+Además repase las secciones utilizadas en las prácticas anteriores:
+Creación de Paquetes y Módulos en NodeJS
+Gulp
+Estudie el paquete ejs para la creación de plantillas
+Estudie los paquetes - como fs - para el manejo de archivos en Node.JS
+Como se usa el módulo gh-pages para automatizar el despliegue en gh-pages
+Como se despliega un libro en www.gitbook.com,
+GitBook Plugins
 
 ##Autores
 
