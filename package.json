@@ -18,6 +18,7 @@
     "url": "https://github.com/Losnen/tareas-iniciales-aitor-joshua-samuel",
     "wiki": "https://github.com/enten/gitbook-boilerplate.wiki.git"
   },
+  "engines": { "node": "5.9.1" },
   "keywords": [
     "gitbook",
     "boilerplate",
