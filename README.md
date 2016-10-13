@@ -69,9 +69,9 @@ GitBook Plugins
 
 ##Enlaces
 
-[Enlace a Heroku](https://heroku-iaas-sytw1617.herokuapp.com/)
-[Enlace al enunciado en gitbook](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaiaas.html)
-[Enlace al enunciado en el campus](https://campusvirtual.ull.es/1617/mod/workshop/view.php?id=97160)
+* [Enlace a Heroku](https://heroku-iaas-sytw1617.herokuapp.com/)
+* [Enlace al enunciado en gitbook](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaiaas.html)
+* [Enlace al enunciado en el campus](https://campusvirtual.ull.es/1617/mod/workshop/view.php?id=97160)
 
 ##Repositorios
 
