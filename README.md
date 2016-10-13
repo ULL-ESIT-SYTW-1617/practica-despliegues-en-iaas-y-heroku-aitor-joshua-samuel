@@ -64,7 +64,13 @@ GitBook Plugins
 2. [Samuel Ramos Barroso](http://losnen.github.io/)
 3. [Joshua Pérez](http://joshuape.github.io/)
 
+##Enlaces
+
+[Enlace a Heroku](https://heroku-iaas-sytw1617.herokuapp.com/)
+[Enlace al enunciado en gitbook](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaiaas.html)
+[Enlace al enunciado en el campus](https://campusvirtual.ull.es/1617/mod/workshop/view.php?id=97160)
+
 ##Repositorios
 
-* [Fork del repositorio](https://github.com/Losnen/tareas-iniciales-aitor-joshua-samuel)
-* [Repositorio de entrega](https://github.com/ULL-ESIT-SYTW-1617/tareas-iniciales-aitor-joshua-samuel)
+* [Fork del repositorio](https://github.com/Losnen/practica-despliegues-en-iaas-y-heroku-aitor-joshua-samuel)
+* [Repositorio de entrega](https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-aitor-joshua-samuel)
