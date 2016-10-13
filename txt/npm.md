@@ -1,5 +1,5 @@
 #NPM
---
+
 NPM (node package manager) es el gestor de paquetes javascript de NODE.JS por excelencia. Gracias a él, tenemos casi cualquier librería disponible a tan solo una linea de comando de distancia, permitiéndonos utilizarla en cuestión de segundos.
 
 NPM utiliza el archivo package.json para almacenar todos los datos relevantes a nuestra aplicación. Así que lo primero que tenemos que hacer es iniciar con el comando:
