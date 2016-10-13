@@ -14,7 +14,7 @@ app.post('/sync', (request, response) => {
     console.log(stdout)
     if(error) console.log(error);
   }
-  exec("git pull", puts);
+  exec("git pull origin master", puts);
 });
 
 app.listen(app.get('port'), () => {
