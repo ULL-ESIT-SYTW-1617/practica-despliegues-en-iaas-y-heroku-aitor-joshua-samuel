@@ -9,7 +9,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/gh-pages'));
 
-app.post('/sync', (request, response) => {
+app.get('/sync', (request, response) => {
   function puts(error, stdout, stderr) { console.log(stdout) }
   exec("git pull", puts);
 });
