@@ -1,8 +1,11 @@
 #Despliegues en IAAS y Heroku
 
+##Funcionamiento del script
+Para actualizar de forma automática el servidor de iaas, moverse al directorio script y ejecutar: ```./script2  ```
+
 ##Descripción
 
-El objetivo de esta práctica es proporcionar un mecanismo de despliegue de un libro gitbook de manera que un ```deploy``` a github produzca la actualización automática de los otros sites de despliegue: Prueba
+El objetivo de esta práctica es proporcionar un mecanismo de despliegue de un libro gitbook de manera que un ```deploy``` a github produzca la actualización automática de los otros sites de despliegue : ,
 
 * gitboook.com
 
