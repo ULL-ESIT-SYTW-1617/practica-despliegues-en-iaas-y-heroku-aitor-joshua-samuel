@@ -14,7 +14,7 @@ app.post('/sync', (request, response) => {
     console.log(stdout)
     if(error) console.log(error);
   }
-  exec("git pull https://git.heroku.com/heroku-iaas-sytw1617.git", puts);
+  exec("git pull https://git.heroku.com/heroku-iaas-sytw1617.git master", puts);
 });
 
 app.listen(app.get('port'), () => {
