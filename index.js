@@ -14,7 +14,7 @@ app.post('/sync', (request, response) => {
     console.log(stdout)
     if(error) console.log(error);
   }
-  exec("git pull git@github.com:ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-aitor-joshua-samuel.git master", puts);
+  exec("git clone git@github.com:ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-aitor-joshua-samuel.git master", puts);
 });
 //git@github.com:ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-aitor-joshua-samuel.git
 
