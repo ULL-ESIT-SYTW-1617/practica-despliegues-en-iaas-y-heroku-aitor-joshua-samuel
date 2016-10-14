@@ -1,8 +1,8 @@
 #Despliegues en IAAS y Heroku
 
 ##Funcionamiento del script
-Para actualizar de forma automática el servidor de iaas, moverse al directorio script y ejecutar: ```./script2  ```
-
+* Para actualizar de forma automática el servidor de iaas, moverse al directorio script y ejecutar: ``` ssh sytw './pull_iass'  ```
+* En caso de hacer un fork, se debe cambiar la dirección del repositorio en la máquina de heroku para que haga el despliegue automático en heroku.
 ##Descripción
 
 El objetivo de esta práctica es proporcionar un mecanismo de despliegue de un libro gitbook de manera que un ```deploy``` a github produzca la actualización automática de los otros sites de despliegue : ,
@@ -72,6 +72,7 @@ GitBook Plugins
 * [Enlace a Heroku](https://heroku-iaas-sytw1617.herokuapp.com/)
 * [Enlace al enunciado en gitbook](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaiaas.html)
 * [Enlace al enunciado en el campus](https://campusvirtual.ull.es/1617/mod/workshop/view.php?id=97160)
+* [Enlace a la máquina del iaas](http://10.6.128.174/)
 
 ##Repositorios
 
